@@ -37,6 +37,8 @@ class TestCases(unittest.TestCase):
         }
 
         sim = FDTDSimulation(**params)
+        rend = SimulationRender(sim)
+        rend.generate_animation()
 
 
 if __name__ == '__main__':
